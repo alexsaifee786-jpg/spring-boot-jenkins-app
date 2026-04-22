@@ -1,0 +1,14 @@
+package com.jenkins;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "<h1>Success! Jenkins deployed this Spring Boot app on Java 21!</h1>";
+    }
+}
+
